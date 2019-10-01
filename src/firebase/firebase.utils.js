@@ -3,13 +3,13 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-  apiKey: "AIzaSyC5JlJSzicdKzx86s-zIDbvnmPDVVDTU8o",
-  authDomain: "clothingshop-ee36b.firebaseapp.com",
-  databaseURL: "https://clothingshop-ee36b.firebaseio.com",
-  projectId: "clothingshop-ee36b",
-  storageBucket: "",
-  messagingSenderId: "527619484970",
-  appId: "1:527619484970:web:81f8417852561baee34253"
+  apiKey: process.env.APIKEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_ID,
+  appId: process.env.APP_ID
 };
 
 firebase.initializeApp(config);
